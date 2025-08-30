@@ -28,9 +28,10 @@ class UserManager:
 
 if __name__ == "__main__":
     user_manager = UserManager()
+    start_time = time.time()
     
-    for i in range(500):
+    for i in range(1000):
         user_manager.add_user(i, f"Usuario Numero: {i}")
+        print(user_manager.find_user(i))
 
-    avg = user_manager.average_user_id()
-    print(avg)
+    print(f"tiempo de ejecucion: {(time.time() - start_time)}")
