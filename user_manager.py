@@ -32,5 +32,13 @@ if __name__ == "__main__":
     for i in range(500):
         user_manager.add_user(i, f"Usuario Numero: {i}")
 
-    user_found = user_manager.find_user(3)
-    print(user_found)
+    for i in range(500):
+        user_found = user_manager.find_user(i)
+        print(user_found)
+    
+    for i in range(500):
+        user_manager.delete_user(i)
+
+    for i in range(500):
+        user_found = user_manager.find_user(i)
+        print(user_found)
