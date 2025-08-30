@@ -34,4 +34,9 @@ if __name__ == "__main__":
         user_manager.add_user(i, f"Usuario Numero: {i}")
         print(user_manager.find_user(i))
 
+    user_manager.add_user(1, "Mischa")
     print(f"tiempo de ejecucion: {(time.time() - start_time)}")
+
+    print (user_manager.find_user(1))
+    print (user_manager.delete_user(1))
+    print (user_manager.find_user(1))
